@@ -125,11 +125,11 @@
   "defaultProject": "magister",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "app",
+      "prefix": "mag",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "app"
+      "prefix": "mag"
     }
   }
 }

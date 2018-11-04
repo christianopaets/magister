@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'test',
-    loadChildren: 'app/pages/pages.module#PagesModule'
+    path: 'compare',
+    loadChildren: 'app/pages/compare/compare.module#CompareModule'
   },
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'test'
+    redirectTo: 'compare'
   }
 ];
 

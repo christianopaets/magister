@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col s3" *ngFor="let group of groups">
+    <p>
+      <label>
+        <input type="checkbox"
+               class="filled-in"
+               (change)="onSelect(group)"/>
+        <span>{{ group.name }}</span>
+      </label>
+    </p>
+  </div>
+</div>
