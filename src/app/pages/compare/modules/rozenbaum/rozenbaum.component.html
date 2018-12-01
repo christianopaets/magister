@@ -1,0 +1,30 @@
+<ul class="collapsible expandable" [hidden]="!rozenbaumService.canBeCalled(groups)">
+  <li>
+    <div class="collapsible-header">Rozenbaum: {{ winGroup?.name }}</div>
+    <div class="collapsible-body">
+      <div class="row">
+        <div class="col s4 no-padding" *ngFor="let group of rozenbaumService.groupsSorted">
+          <table class="striped centered">
+            <thead>
+            <tr>
+              <th colspan="2">
+                {{ group.name }}
+              </th>
+            </tr>
+            <tr>
+              <th>Student</th>
+              <th>Mark</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let student of group.students">
+              <td>{{ student.name }}</td>
+              <td>{{ student.mark }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>

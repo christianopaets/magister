@@ -16,6 +16,10 @@
       "dom"
     ],
     "module": "es2015",
-    "baseUrl": "./"
+    "baseUrl": "./src",
+    "paths": {
+      "@shared/*": ["app/shared/*"],
+      "@models/*": ["app/models/*"]
+    }
   }
 }

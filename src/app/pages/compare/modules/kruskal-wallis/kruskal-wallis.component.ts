@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {Group} from '../../../../models/Group';
 import {KruskalWallisService} from './kruskal-wallis.service';
 
@@ -7,14 +7,17 @@ import {KruskalWallisService} from './kruskal-wallis.service';
   templateUrl: './kruskal-wallis.component.html',
   styleUrls: ['./kruskal-wallis.component.scss']
 })
-export class KruskalWallisComponent implements OnInit {
+export class KruskalWallisComponent implements OnChanges {
 
   @Input() groups: Group[];
 
   constructor(public kruskalWallisService: KruskalWallisService) {}
 
-  ngOnInit(): void {
-    this.kruskalWallisService.run(this.groups);
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.groups && this.kruskalWallisService.canBeCalled(this.groups)) {
+      console.log(1);
+      this.kruskalWallisService.run(this.groups);
+    }
   }
 
 

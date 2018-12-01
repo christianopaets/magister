@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {Student} from '../../../../models/Student';
-import {Group} from '../../../../models/Group';
+import {Student} from '@models/Student';
+import {Group} from '@models/Group';
 
 @Injectable()
 export class KruskalWallisService {
@@ -58,5 +58,12 @@ export class KruskalWallisService {
       .reduce((prevValue: number, value) => {
         return prevValue + value.rang;
       }, 0);
+  }
+
+  public canBeCalled(groups: Group[]) {
+    if (groups.length < 3) {
+      return false;
+    }
+    return true;
   }
 }

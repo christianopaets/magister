@@ -13,4 +13,7 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CompareRoutingModule {}
+export class CompareRoutingModule {
+
+  private readonly a: string;
+}

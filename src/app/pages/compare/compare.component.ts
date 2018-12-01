@@ -13,17 +13,16 @@ import * as M from 'materialize-css';
 export class CompareComponent implements AfterViewInit {
 
   public groups$: Observable<Group[]> = this._studentsService.getGroups();
+
   public selectedGroups: Group[] = [];
 
   constructor(
     private readonly _studentsService: StudentsService
-  ) {
-    this.groups$.subscribe(res => console.log(res));
-  }
+  ) {}
 
   createSelectedGroups(groups: Group[]): void {
     this.selectedGroups = groups;
-    console.log(groups);
+    this.selectedGroups = this.selectedGroups.slice();
   }
 
   ngAfterViewInit(): void {

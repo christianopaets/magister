@@ -1,7 +1,7 @@
-import {Student} from '../../models/Student';
+import {Group} from '@models/Group';
 
 export interface MethodInterface {
   error: {code: number, message: string};
-  canBeCalled(students: Array<Student[]>): boolean;
-  run(students: Array<Student[]>): any;
+  canBeCalled(groups: Group[]): boolean;
+  run(groups: Group[]): any;
 }

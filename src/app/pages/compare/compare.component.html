@@ -4,7 +4,16 @@
               (selected)="createSelectedGroups($event)"></mag-groups>
   <div class="row">
     <div class="col s12">
-      <mag-kruskal-wallis [groups]="groups"></mag-kruskal-wallis>
+      <mag-rozenbaum [groups]="selectedGroups"></mag-rozenbaum>
+    </div>
+    <div class="col s12">
+      <mag-mann-whitney [groups]="selectedGroups"></mag-mann-whitney>
+    </div>
+    <div class="col s12">
+      <mag-kruskal-wallis [groups]="selectedGroups"></mag-kruskal-wallis>
+    </div>
+    <div class="col s12">
+      <mag-jonckheere></mag-jonckheere>
     </div>
   </div>
 </div>
