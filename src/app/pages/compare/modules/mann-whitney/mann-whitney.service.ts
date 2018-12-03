@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import {Student} from '../../../../models/Student';
 import {Group} from '@models/Group';
+import {IError} from '@models/Error';
+import {MethodInterface} from '@shared/default/MethodInterface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MannWhitneyService {
+export class MannWhitneyService implements MethodInterface{
 
   public fullGroup: Array<{ group: number, student: Student, rang?: number, index?: number }>;
   public firstGroup: Group;
   public secondGroup: Group;
-  public firstRangSum: number;
-  public secondRangSum: number;
-  public firstMarkSum: number;
-  public secondMarkSum: number;
+
+  public error: IError;
 
   constructor() { }
 
@@ -66,8 +66,33 @@ export class MannWhitneyService {
 
   public canBeCalled(groups: Group[]) {
     if (groups.length !== 2) {
+      this.error = {
+        code: 1,
+        message: 'More than 2 groups'
+      };
       return false;
     }
+
+    if (groups[0].students.length < 3 || groups[1].students.length < 3) {
+      this.error = {
+        code: 2,
+        message: 'Group with less than 3 students'
+      };
+      return false;
+    }
+
+    if (groups[0].students.length > 60 || groups[1].students.length > 60) {
+      this.error = {
+        code: 3,
+        message: 'Group with more than 60 students'
+      };
+      return false;
+    }
+
+    this.error = {
+      code: 0,
+      message: 'common.no-error'
+    };
     return true;
   }
 }

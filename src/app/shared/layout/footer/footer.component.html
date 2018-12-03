@@ -1,0 +1,64 @@
+<footer class="page-footer blue-grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Footer Content</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <div class="page-footer__media right">
+          <h5 class="white-text page-footer__media-text">{{ 'footer.media_title' | translate }}</h5>
+          <ul class="page-footer__media-list">
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/gmail.svg"
+                   alt="gmail"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/github-logo.svg"
+                   alt="github"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/linkedin.svg"
+                   alt="linkedin"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/facebook.svg"
+                   alt="facebook"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/telegram.svg"
+                   alt="telegram"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+              <img src="assets/icons/pinterest.svg"
+                   alt="pinterest"
+                   class="page-footer__media-icon">
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row footer-copyright__row">
+        <div class="col s12">
+          {{ 'footer.copyright' | translate }}
+          <div class="right">
+            <span class="grey-text darken-3 left footer-copyright__language"
+                  [class.white-text]="currentLang === language.code"
+                  *ngFor="let language of footerService.languages"
+                  (click)="setCurrentLanguage(language.code)">
+              {{ language.name }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

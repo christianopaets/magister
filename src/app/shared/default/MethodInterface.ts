@@ -1,7 +1,8 @@
 import {Group} from '@models/Group';
+import {IError} from '@models/Error';
 
 export interface MethodInterface {
-  error: {code: number, message: string};
+  error: IError;
   canBeCalled(groups: Group[]): boolean;
   run(groups: Group[]): any;
 }

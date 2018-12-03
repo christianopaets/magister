@@ -1,0 +1,19 @@
+<div class="card-panel grey lighten-5 mag-card">
+  <div class="mag-card__header">
+    <h4 class="mag-card__header-title">
+      {{ title }}
+    </h4>
+  </div>
+  <div class="mag-card__error" [hidden]="error.code === 0">
+    <blockquote class="mag-card__blockquote">
+      <h6>Error</h6>
+      <p class="pink-text mag-card__blockquote-text">{{ error.message }}</p>
+    </blockquote>
+  </div>
+  <div class="mag-card__win" [hidden]="error.code !== 0">
+    {{ win }}
+  </div>
+  <div class="mag-card__content" [hidden]="error.code !== 0">
+    <ng-content></ng-content>
+  </div>
+</div>

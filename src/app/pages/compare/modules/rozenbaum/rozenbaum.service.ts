@@ -3,6 +3,7 @@ import {p001, p005} from './rozenbaum';
 import {MethodInterface} from '@shared/default/MethodInterface';
 import {Student} from '@models/Student';
 import {Group} from '@models/Group';
+import {IError} from '@models/Error';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class RozenbaumService implements MethodInterface {
   public secondGroup: Group;
   public QEMP: number;
 
-  public error: { code: number, message: string };
+  public error: IError;
 
   constructor() { }
 
@@ -111,6 +112,11 @@ export class RozenbaumService implements MethodInterface {
         return false;
       }
     }
+
+    this.error = {
+      code: 0,
+      message: 'common.no-error'
+    };
     return true;
   }
 

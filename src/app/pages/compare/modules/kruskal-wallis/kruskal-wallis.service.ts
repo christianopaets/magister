@@ -1,13 +1,17 @@
 import {Injectable} from '@angular/core';
 import {Student} from '@models/Student';
 import {Group} from '@models/Group';
+import {IError} from '@models/Error';
+import {MethodInterface} from '@shared/default/MethodInterface';
 
 @Injectable()
-export class KruskalWallisService {
+export class KruskalWallisService implements MethodInterface {
 
   public fullGroup: Array<{ group: number, student: Student, rang?: number, index?: number }> = [];
 
   public groups: Group[];
+
+  public error: IError;
 
   public HEmp: number;
 
@@ -62,8 +66,17 @@ export class KruskalWallisService {
 
   public canBeCalled(groups: Group[]) {
     if (groups.length < 3) {
+      this.error = {
+        code: 1,
+        message: 'Less than 3 groups'
+      };
       return false;
     }
+
+    this.error = {
+      code: 0,
+      message: 'common.no-error'
+    };
     return true;
   }
 }

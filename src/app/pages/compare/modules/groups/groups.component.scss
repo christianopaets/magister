@@ -1,0 +1,19 @@
+$group-item-padding: 16px 24px;
+$groups-margin: 1rem 0;
+$group-item-shadow: 0 0.2px 0.2px #37474f;
+
+.groups {
+  margin: $groups-margin;
+
+  &__col {
+    //padding: 0;
+  }
+
+  &__item {
+    width: 100%;
+    pointer-events: all;
+    cursor: pointer;
+    //padding: $group-item-padding;
+    //box-shadow: $group-item-shadow;
+  }
+}

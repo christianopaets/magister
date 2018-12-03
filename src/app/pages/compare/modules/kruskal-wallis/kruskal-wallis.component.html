@@ -1,6 +1,6 @@
-<ul class="collapsible expandable" [hidden]="!kruskalWallisService.canBeCalled(groups)">
-  <li>
-    <div class="collapsible-header">Kruskal Wallis</div>
-    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-  </li>
-</ul>
+
+<mag-card [title]="'kruskal-wallis.title' | translate"
+          [error]="kruskalWallisService.error"
+          [win]="">
+  <span>Lorem ipsum dolor sit amet.</span>
+</mag-card>

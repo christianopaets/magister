@@ -31,7 +31,7 @@ export class CompareComponent implements AfterViewInit {
       M.Collapsible.init(document.querySelectorAll('.collapsible.expandable'), {
         accordion: false
       });
-    }, 0);
+    }, 10);
   }
 
 }

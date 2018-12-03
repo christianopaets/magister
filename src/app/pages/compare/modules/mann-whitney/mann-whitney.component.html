@@ -1,6 +1,5 @@
-<ul class="collapsible expandable" [hidden]="!mannWhitneyService.canBeCalled(groups)">
-  <li>
-    <div class="collapsible-header">Mann Whitney</div>
-    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-  </li>
-</ul>
+<mag-card [title]="'mann-whitney.title' | translate"
+          [error]="mannWhitneyService.error"
+          [win]="">
+  <span>Lorem ipsum dolor sit amet.</span>
+</mag-card>

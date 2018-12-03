@@ -1,0 +1,40 @@
+$language-padding: 0 0 0 8px;
+$media-icon-height: 32px;
+$media-link-margin: 0 0 0 8px;
+$media-text-margin-left: 8px;
+$media-max-width: 240px;
+
+.page-footer {
+
+  &__media {
+    max-width: $media-max-width;
+  }
+
+  &__media-list {
+    display: flex;
+  }
+
+  &__media-link {
+    margin: $media-link-margin;
+  }
+
+  &__media-text {
+    margin-left: $media-text-margin-left;
+  }
+
+  &__media-icon {
+    width: $media-icon-height;
+  }
+
+  .footer-copyright {
+
+    &__row {
+      margin: 0;
+    }
+
+    &__language {
+      cursor: pointer;
+      padding: $language-padding;
+    }
+  }
+}

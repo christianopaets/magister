@@ -19,7 +19,4 @@ export class KruskalWallisComponent implements OnChanges {
       this.kruskalWallisService.run(this.groups);
     }
   }
-
-
-
 }

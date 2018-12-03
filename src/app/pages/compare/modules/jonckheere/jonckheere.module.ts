@@ -1,10 +1,15 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {JonckheereComponent} from './jonckheere.component';
+import {JonckheereService} from './jonckheere.service';
+import {TranslateModule} from '@ngx-translate/core';
+import {ComponentsModule} from '@shared/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    TranslateModule,
+    ComponentsModule
   ],
   declarations: [
     JonckheereComponent
@@ -12,7 +17,7 @@ import {JonckheereComponent} from './jonckheere.component';
   exports: [
     JonckheereComponent
   ],
-  providers: [JonckheereComponent]
+  providers: [JonckheereService]
 })
 export class JonckheereModule {}
 

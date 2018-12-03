@@ -1,0 +1,25 @@
+{
+  "header": {
+    "logo_text": "Logo"
+  },
+  "footer": {
+    "media_title": "Where to find me",
+    "copyright": "© 2018 Christian Opaets All Rights Reserved"
+  },
+  "rozenbaum": {
+    "title": "Rozenbaum Q Test"
+  },
+  "mann-whitney": {
+    "title": "Mann-Whitney U Test"
+  },
+  "kruskal-wallis": {
+    "title": "Kruskal-Wallis H Test"
+  },
+  "jonckheere": {
+    "title": "Jonckheere S Test"
+  },
+  "common": {
+    "no-error": "There is no error",
+    "error": "Error"
+  }
+}

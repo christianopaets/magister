@@ -13,6 +13,16 @@ export class StudentsService {
 
   getGroups(): Observable<Group[]> {
     return this.http.get<{groups: Group[]}>('assets/mocks/students.json')
-      .pipe(map((res: {groups: Group[]}) => res.groups));
+      .pipe(map((res: {groups: Group[]}) => res.groups.map(group => {
+        return {
+          ...group,
+          students: group.students.map(student => {
+            return {
+              ...student,
+              mark: +student.mark
+            };
+          })
+        };
+      })));
   }
 }
