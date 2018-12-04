@@ -85,7 +85,7 @@ export class KruskalWallisService implements MethodInterface {
     if (groups.length < 3) {
       this.error = {
         code: 1,
-        message: 'Less than 3 groups'
+        message: 'kruskal-wallis.code_1'
       };
       return false;
     }

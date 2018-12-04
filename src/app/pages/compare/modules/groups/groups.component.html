@@ -6,7 +6,7 @@
             [class.disabled]="isSelected(group)"
             (click)="onSelect(group)">
       <i class="material-icons right groups__icon"
-         *ngIf="isSelected(group)">check</i>
+         *ngIf="isSelected(group)">{{ checkIcon }}</i>
       {{ group.name }}
     </button>
   </div>

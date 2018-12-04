@@ -10,6 +10,8 @@ export class GroupsComponent {
 
   static PULSED = 'pulsed';
 
+  checkIcon = 'check';
+
   @Input()
   groups: Group[];
 

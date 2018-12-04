@@ -151,7 +151,7 @@ export class MannWhitneyService implements MethodInterface {
     if (groups.length !== 2) {
       this.error = {
         code: 1,
-        message: 'More than 2 groups'
+        message: 'mann-whitney.code_1'
       };
       return false;
     }
@@ -159,7 +159,7 @@ export class MannWhitneyService implements MethodInterface {
     if (groups[0].students.length < 3 || groups[1].students.length < 3) {
       this.error = {
         code: 2,
-        message: 'Group with less than 3 students'
+        message: 'mann-whitney.code_2'
       };
       return false;
     }
@@ -167,7 +167,7 @@ export class MannWhitneyService implements MethodInterface {
     if (groups[0].students.length > 40 || groups[1].students.length > 40) {
       this.error = {
         code: 3,
-        message: 'Group with more than 40 students'
+        message: 'mann-whitney.code_3'
       };
       return false;
     }

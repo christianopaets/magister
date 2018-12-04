@@ -23,7 +23,7 @@ export class JonckheereService implements MethodInterface {
     if (groups.length < 3) {
       this.error = {
         code: 1,
-        message: 'There are less than 3 groups'
+        message: 'jonckheere.code_1'
       };
       return false;
     }
@@ -31,7 +31,7 @@ export class JonckheereService implements MethodInterface {
     if (groups.length > 6) {
       this.error = {
         code: 2,
-        message: 'There are more than 6 groups'
+        message: 'jonckheere.code_2'
       };
       return false;
     }

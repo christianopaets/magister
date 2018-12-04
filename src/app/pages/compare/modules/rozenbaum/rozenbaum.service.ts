@@ -85,14 +85,14 @@ export class RozenbaumService implements MethodInterface {
     if (groups.length !== 2) {
       this.error = {
         code: 1,
-        message: 'There are more or less than 2 groups'
+        message: 'rozenbaum.code_1'
       };
       return false;
     }
     if (groups[0].students.length < 11 || groups[1].students.length < 11) {
       this.error = {
         code: 2,
-        message: 'There is a group with less than 11 students'
+        message: 'rozenbaum.code_2'
       };
       return false;
     }
@@ -100,7 +100,7 @@ export class RozenbaumService implements MethodInterface {
       && Math.abs(groups[0].students.length - groups[1].students.length) > 10) {
       this.error = {
         code: 3,
-        message: 'The students length in both group is less than 50 and the difference between lengths is more than 10'
+        message: 'rozenbaum.code_3'
       };
       return false;
     }
@@ -111,7 +111,7 @@ export class RozenbaumService implements MethodInterface {
     ) {
       this.error = {
         code: 4,
-        message: 'The students length in both group is less than 100 and the difference between lengths is more than 20'
+        message: 'rozenbaum.code_4'
       };
       return false;
     }
@@ -125,7 +125,7 @@ export class RozenbaumService implements MethodInterface {
       if (more / less > 1.75) {
         this.error = {
           code: 5,
-          message: 'The students length in both group is more than 100 and the difference between lengths is more than 2 times'
+          message: 'rozenbaum.code_5'
         };
         return false;
       }

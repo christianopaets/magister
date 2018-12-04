@@ -16,15 +16,34 @@
     "copyright": "© 2018 Christian Opaets All Rights Reserved"
   },
   "rozenbaum": {
-    "title": "Rozenbaum Q Test"
+    "title": "Rozenbaum Q Test",
+    "H0": "Студенти <b>{{firstGroup}}</b> не переважають <b>{{secondGroup}}</b> за рівнем оцінок",
+    "H1": "Студенти <b>{{firstGroup}}</b> переважають <b>{{secondGroup}}</b> за рівнем оцінок",
+    "code_1": "Selected more or less than 2 groups",
+    "code_2": "There is a group with less than 11 students",
+    "code_3": "The students length in both group is less than 50 and the difference between lengths is more than 10",
+    "code_4": "The students length in both group is less than 100 and the difference between lengths is more than 20",
+    "code_5": "The students length in both group is more than 100 and the difference between lengths is more than 2 times"
   },
   "mann-whitney": {
-    "title": "Mann-Whitney U Test"
+    "title": "Mann-Whitney U Test",
+    "H0": "Студенти <b>{{secondGroup}}</b> не переважають <b>{{firstGroup}}</b> за рівнем оцінок",
+    "H1": "Студенти <b>{{secondGroup}}</b> переважають <b>{{firstGroup}}</b> за рівнем оцінок",
+    "code_1": "Selected more or less than 2 groups",
+    "code_2": "Group with less than 3 students",
+    "code_3": "Group with more than 40 students"
   },
   "kruskal-wallis": {
-    "title": "Kruskal-Wallis H Test"
+    "title": "Kruskal-Wallis H Test",
+    "H0": "Між групами <b>{{groups}}</b> існують тільки випадкові відмінності за рівнем оцінок",
+    "H1": "Між групами <b>{{groups}}</b> існують невипадкові відмінності за рівнем оцінок",
+    "code_1": "Selected less than 3 groups"
   },
   "jonckheere": {
-    "title": "Jonckheere S Test"
+    "title": "Jonckheere S Test",
+    "H0": "Тенденція підвищення значень за шкалою <b>Оцінок</b> при переході від групи до групи випадкова",
+    "H1": "Тенденція підвищення значень за шкалою <b>Оцінок</b> при переході від групи до групи невипадкова",
+    "code_1": "Selected less than 3 groups",
+    "code_2": "Selected more than 6 groups"
   }
 }
