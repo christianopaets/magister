@@ -15,7 +15,6 @@ export class JonckheereComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.groups && this.jonckheereService.canBeCalled(this.groups)) {
-      console.log(1);
       this.jonckheereService.run(this.groups);
     }
   }

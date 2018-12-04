@@ -1,3 +1,5 @@
+$table-col-padding: 8px 4px;
+
 :host {
   display: flex;
   min-height: 100vh;
@@ -6,4 +8,8 @@
 
 .page-footer {
   padding: 0;
+}
+
+/deep/ td, th {
+  padding: $table-col-padding !important;
 }

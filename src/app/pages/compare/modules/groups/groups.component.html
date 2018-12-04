@@ -1,11 +1,12 @@
 <div class="row groups">
-  <div class="col l2 m3 s4 groups__col"
-       *ngFor="let group of groups">
-    <button class="groups__item btn blue-grey darken-1"
-         [class.disabled]="isSelected(group)"
-         (click)="onSelect(group)">
-      <i *ngIf="isSelected(group)"
-         class="material-icons right">check</i>
+  <div class="col l2 m3 s4"
+       *ngFor="let group of groups; let first = first">
+    <button class="groups__item btn cyan darken-2 truncate"
+            [class.pulse]="first && !pulsed && !isSelected(group)"
+            [class.disabled]="isSelected(group)"
+            (click)="onSelect(group)">
+      <i class="material-icons right groups__icon"
+         *ngIf="isSelected(group)">check</i>
       {{ group.name }}
     </button>
   </div>

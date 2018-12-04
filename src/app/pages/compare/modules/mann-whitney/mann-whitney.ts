@@ -127,24 +127,3 @@ export const p001_2 = [
   [173, 288, 303, 317, 332, 347, 362, 377, 392, 407, 422, 437, 452, 467, 482, 497, 512, 527, null],
   [281, 296, 311, 326, 342, 357, 372, 388, 403, 418, 434, 449, 465, 480, 495, 511, 526, 542, 557]
 ];
-
-// Import stylesheets
-// import './style.css';
-//
-// let tr = document.querySelectorAll('table tr');
-//
-// let array = [];
-//
-// for (let i = 0; i < tr.length; ++i) {
-//   if (tr.innerHTML !== " ") {
-//     let td = tr[i].querySelectorAll('td');
-//     let newLine = [];
-//     for (let i = 1; i < td.length; ++i) {
-//       newLine.push(+td[i].querySelector('span').innerHTML);
-//       // console.log(+td[i].querySelector('span').innerHTML);
-//     }
-//     array.push(newLine);
-//   }
-// }
-//
-// console.log(JSON.stringify(array));

@@ -1,18 +1,19 @@
 <mag-card [title]="'rozenbaum.title' | translate"
           [error]="rozenbaumService.error"
-          [win]="winGroup?.name">
+          [win]="rozenbaumService.winStrategyValue | translate: rozenbaumService.translateValue">
   <div class="row">
-    <div class="col s4 no-padding" *ngFor="let group of rozenbaumService.groupsSorted">
+    <div class="col s12 m6 l6 no-padding" *ngFor="let group of rozenbaumService.groupsSorted">
       <table class="striped centered">
         <thead>
         <tr>
-          <th colspan="2">
+          <th colspan="2"
+              class="center-align">
             {{ group.name }}
           </th>
         </tr>
         <tr>
-          <th>Student</th>
-          <th>Mark</th>
+          <th>{{ "common.student" | translate }}</th>
+          <th>{{ "common.mark" | translate }}</th>
         </tr>
         </thead>
         <tbody>

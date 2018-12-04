@@ -8,13 +8,25 @@ import {Group} from '../../../../models/Group';
 })
 export class GroupsComponent {
 
-  @Input() groups: Group[];
+  static PULSED = 'pulsed';
 
-  @Input() selectedGroups: Group[] = [];
+  @Input()
+  groups: Group[];
 
-  @Output() selected: EventEmitter<Group[]> = new EventEmitter<Group[]>();
+  @Input()
+  selectedGroups: Group[] = [];
+
+  @Output()
+  selected: EventEmitter<Group[]> = new EventEmitter<Group[]>();
+
+  private _pulsed: string = localStorage.getItem(GroupsComponent.PULSED);
+
+  get pulsed(): string {
+    return this._pulsed;
+  }
 
   constructor() {
+    localStorage.setItem(GroupsComponent.PULSED, 'true');
     this.selected.emit(this.selectedGroups);
   }
 

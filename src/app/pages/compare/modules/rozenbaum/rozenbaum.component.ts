@@ -11,13 +11,11 @@ export class RozenbaumComponent implements OnChanges {
 
   @Input() groups: Group[];
 
-  public winGroup: Group;
-
   constructor(public rozenbaumService: RozenbaumService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.groups && this.rozenbaumService.canBeCalled(this.groups)) {
-      this.winGroup = this.rozenbaumService.run(this.groups);
+      this.rozenbaumService.run(this.groups);
     }
   }
 

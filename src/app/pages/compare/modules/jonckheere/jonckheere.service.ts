@@ -3,6 +3,8 @@ import {Group} from '@models/Group';
 import {IError} from '@models/Error';
 import {Jonckheere, JonckheereItem} from '@models/Jonkheere';
 import {MethodInterface} from '@shared/default/MethodInterface';
+import {s001, s005} from './jonkheere';
+import {WinStrategy} from '@shared/default/win-strategy.enum';
 
 @Injectable()
 export class JonckheereService implements MethodInterface {
@@ -10,6 +12,12 @@ export class JonckheereService implements MethodInterface {
   error: IError;
   groups: Jonckheere[];
   SEmp: number;
+
+  winStrategy: string;
+
+  get winStrategyValue(): string {
+    return `jonckheere.${this.winStrategy}`;
+  }
 
   canBeCalled(groups: Group[]): boolean {
     if (groups.length < 3) {
@@ -69,14 +77,26 @@ export class JonckheereService implements MethodInterface {
 
   private _calcEmp(): void {
     const A = this.groups.reduce((prev, current) => prev + current.advantageTotal, 0);
-    console.log(A);
     const B = this.groups.length * (this.groups.length - 1) / 2 * this.groups[0].students.length * this.groups[0].students.length;
      this.SEmp = 2 * A - B;
+  }
+
+  private _calcWinStrategy(): void {
+    const groupIndex = this.groups.length - 3;
+    const studentIndex = this.groups[0].students.length - 2;
+    const S_005 = s005[groupIndex][studentIndex];
+    const S_001 = s001[groupIndex][studentIndex];
+    if (this.SEmp > S_005 || this.SEmp > S_001) {
+      this.winStrategy = WinStrategy.H1;
+      return;
+    }
+    this.winStrategy = WinStrategy.H0;
   }
 
   run(groups: Group[]): void {
     this._setGroups(groups);
     this._calcAdvantages();
     this._calcEmp();
+    this._calcWinStrategy();
   }
 }

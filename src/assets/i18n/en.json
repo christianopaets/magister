@@ -1,4 +1,13 @@
 {
+  "common": {
+    "no-error": "There is no error",
+    "error": "Error",
+    "student": "Student",
+    "mark": "Mark",
+    "rang": "Rang",
+    "total": "Total",
+    "average": "Average"
+  },
   "header": {
     "logo_text": "Logo"
   },
@@ -17,9 +26,5 @@
   },
   "jonckheere": {
     "title": "Jonckheere S Test"
-  },
-  "common": {
-    "no-error": "There is no error",
-    "error": "Error"
   }
 }

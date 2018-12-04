@@ -9,13 +9,17 @@ import {KruskalWallisService} from './kruskal-wallis.service';
 })
 export class KruskalWallisComponent implements OnChanges {
 
-  @Input() groups: Group[];
+  @Input()
+  groups: Group[];
+
+  get groupNames(): string {
+    return `${this.groups.map(value => value.name).join(', ')}`;
+  }
 
   constructor(public kruskalWallisService: KruskalWallisService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.groups && this.kruskalWallisService.canBeCalled(this.groups)) {
-      console.log(1);
       this.kruskalWallisService.run(this.groups);
     }
   }

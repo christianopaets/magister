@@ -9,6 +9,10 @@ $blockquote-margin-bottom: 0;
   &__blockquote {
     border-color: #e91e63;
     margin-bottom: $blockquote-margin-bottom;
+
+    &_success {
+      border-color: #4caf50;
+    }
   }
 
   &__blockquote-text {

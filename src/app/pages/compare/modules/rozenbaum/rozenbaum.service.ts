@@ -4,6 +4,7 @@ import {MethodInterface} from '@shared/default/MethodInterface';
 import {Student} from '@models/Student';
 import {Group} from '@models/Group';
 import {IError} from '@models/Error';
+import {WinStrategy} from '@shared/default/win-strategy.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,22 @@ export class RozenbaumService implements MethodInterface {
   public firstGroup: Group;
   public secondGroup: Group;
   public QEMP: number;
+
+  winStrategy: string;
+
+  get winStrategyValue(): string {
+    return `rozenbaum.${this.winStrategy}`;
+  }
+
+  get translateValue() {
+    if (!this.winStrategy) {
+      return;
+    }
+    return {
+      firstGroup: this.firstGroup.name,
+      secondGroup: this.secondGroup.name
+    };
+  }
 
   public error: IError;
 
@@ -50,7 +67,7 @@ export class RozenbaumService implements MethodInterface {
     this.QEMP = S1 + S2;
   }
 
-  showResult(): Group {
+  showResult(): void {
     let P001 = p001[this.firstGroup.students.length - 11][this.secondGroup.students.length - 11];
     let P005 = p005[this.firstGroup.students.length - 11][this.secondGroup.students.length - 11];
     if (this.firstGroup.students.length > 26 || this.secondGroup.students.length > 26) {
@@ -58,9 +75,10 @@ export class RozenbaumService implements MethodInterface {
       P005 = 8;
     }
     if ( P001 < this.QEMP || P005 < this.QEMP ) {
-      return this.firstGroup;
+      this.winStrategy = WinStrategy.H1;
+      return;
     }
-    return this.secondGroup;
+    this.winStrategy = WinStrategy.H0;
   }
 
   canBeCalled(groups: Group[]) {
@@ -120,10 +138,10 @@ export class RozenbaumService implements MethodInterface {
     return true;
   }
 
-  run(groups: Group[]): Group {
+  run(groups: Group[]): void {
     this.sortArrays(groups[0], groups[1]);
     this.findQEMP();
-    return this.showResult();
+    this.showResult();
   }
 
   get groupsSorted(): Group[] {

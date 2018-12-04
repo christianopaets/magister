@@ -3,11 +3,14 @@ import {Student} from '@models/Student';
 import {Group} from '@models/Group';
 import {IError} from '@models/Error';
 import {MethodInterface} from '@shared/default/MethodInterface';
+import {kwValues} from './kruskal-wallis';
+import {WinStrategy} from '@shared/default/win-strategy.enum';
+import {IKruskalWallis} from '@models/KruskalWallis';
 
 @Injectable()
 export class KruskalWallisService implements MethodInterface {
 
-  public fullGroup: Array<{ group: number, student: Student, rang?: number, index?: number }> = [];
+  public fullGroup: IKruskalWallis[] = [];
 
   public groups: Group[];
 
@@ -15,14 +18,28 @@ export class KruskalWallisService implements MethodInterface {
 
   public HEmp: number;
 
-  public run(groups: Group[]): any {
-    this.groups = groups;
-    this.createFullGroup();
-    this.HEmp = this.calcHEmp();
-    console.log(this.HEmp);
+  public winStrategy: string;
+
+  get winStrategyValue(): string {
+    return `kruskal-wallis.${this.winStrategy}`;
   }
 
-  public createFullGroup() {
+  getGroupByIndex(index: number): IKruskalWallis[] {
+    return this.fullGroup.filter(group => group.group === index);
+  }
+
+  setWinStrategy(): void {
+    const tendention = this.groups.length - 1;
+    const H_005 = kwValues[tendention][0];
+    const H_001 = kwValues[tendention][1];
+    if (this.HEmp > H_005 || this.HEmp > H_001) {
+      this.winStrategy = WinStrategy.H1;
+      return;
+    }
+    this.winStrategy = WinStrategy.H0;
+  }
+
+  public createFullGroup(): void {
     this.groups.forEach((group: Group, index: number) => {
       this.fullGroup = this.fullGroup.concat(group.students.map((student: Student) => {
         return {group: index + 1, student: student};
@@ -64,7 +81,7 @@ export class KruskalWallisService implements MethodInterface {
       }, 0);
   }
 
-  public canBeCalled(groups: Group[]) {
+  public canBeCalled(groups: Group[]): boolean {
     if (groups.length < 3) {
       this.error = {
         code: 1,
@@ -78,5 +95,12 @@ export class KruskalWallisService implements MethodInterface {
       message: 'common.no-error'
     };
     return true;
+  }
+
+  public run(groups: Group[]): void {
+    this.groups = groups;
+    this.createFullGroup();
+    this.HEmp = this.calcHEmp();
+    this.setWinStrategy();
   }
 }

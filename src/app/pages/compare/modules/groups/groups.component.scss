@@ -5,15 +5,13 @@ $group-item-shadow: 0 0.2px 0.2px #37474f;
 .groups {
   margin: $groups-margin;
 
-  &__col {
-    //padding: 0;
-  }
-
   &__item {
     width: 100%;
     pointer-events: all;
     cursor: pointer;
-    //padding: $group-item-padding;
-    //box-shadow: $group-item-shadow;
+  }
+
+  &__icon {
+    margin: 0;
   }
 }
