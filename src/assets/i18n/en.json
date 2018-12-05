@@ -1,49 +1,52 @@
 {
   "common": {
-    "no-error": "There is no error",
+    "average": "Average",
     "error": "Error",
-    "student": "Student",
     "mark": "Mark",
+    "no-error": "There is no error",
     "rang": "Rang",
+    "student": "Student",
     "total": "Total",
-    "average": "Average"
-  },
-  "header": {
-    "logo_text": "Logo"
+    "advantage": "Advantage"
   },
   "footer": {
+    "copyright": "© 2018 Christian Opaets All Rights Reserved",
+    "description": "This resource allows you to analyze the presence of differences in the level of success of two or more groups",
     "media_title": "Where to find me",
-    "copyright": "© 2018 Christian Opaets All Rights Reserved"
+    "title": "Mathematical methods in psychology"
   },
-  "rozenbaum": {
-    "title": "Rozenbaum Q Test",
-    "H0": "Студенти <b>{{firstGroup}}</b> не переважають <b>{{secondGroup}}</b> за рівнем оцінок",
-    "H1": "Студенти <b>{{firstGroup}}</b> переважають <b>{{secondGroup}}</b> за рівнем оцінок",
-    "code_1": "Selected more or less than 2 groups",
-    "code_2": "There is a group with less than 11 students",
-    "code_3": "The students length in both group is less than 50 and the difference between lengths is more than 10",
-    "code_4": "The students length in both group is less than 100 and the difference between lengths is more than 20",
-    "code_5": "The students length in both group is more than 100 and the difference between lengths is more than 2 times"
-  },
-  "mann-whitney": {
-    "title": "Mann-Whitney U Test",
-    "H0": "Студенти <b>{{secondGroup}}</b> не переважають <b>{{firstGroup}}</b> за рівнем оцінок",
-    "H1": "Студенти <b>{{secondGroup}}</b> переважають <b>{{firstGroup}}</b> за рівнем оцінок",
-    "code_1": "Selected more or less than 2 groups",
-    "code_2": "Group with less than 3 students",
-    "code_3": "Group with more than 40 students"
-  },
-  "kruskal-wallis": {
-    "title": "Kruskal-Wallis H Test",
-    "H0": "Між групами <b>{{groups}}</b> існують тільки випадкові відмінності за рівнем оцінок",
-    "H1": "Між групами <b>{{groups}}</b> існують невипадкові відмінності за рівнем оцінок",
-    "code_1": "Selected less than 3 groups"
+  "header": {
+    "logo_text": "Test statistic"
   },
   "jonckheere": {
-    "title": "Jonckheere S Test",
-    "H0": "Тенденція підвищення значень за шкалою <b>Оцінок</b> при переході від групи до групи випадкова",
-    "H1": "Тенденція підвищення значень за шкалою <b>Оцінок</b> при переході від групи до групи невипадкова",
     "code_1": "Selected less than 3 groups",
-    "code_2": "Selected more than 6 groups"
+    "code_2": "Selected more than 6 groups",
+    "H0": "The trend of <b>Mark</b> increasing when switching from group to group is random",
+    "H1": "The trend of <b>Mark</b> increasing when switching from group to group is non-random",
+    "title": "Jonckheere S Test"
+  },
+  "kruskal-wallis": {
+    "code_1": "Selected less than 3 groups",
+    "H0": "There are only random differences between the groups <b>{{groups}}</b> in terms of ratings.",
+    "H1": "There are non-random differences between the groups <b>{{groups}}</b> in terms of ratings.",
+    "title": "Kruskal-Wallis H Test"
+  },
+  "mann-whitney": {
+    "code_1": "Selected more or less than 2 groups",
+    "code_2": "Group with less than 3 students",
+    "code_3": "Group with more than 40 students",
+    "H0": "Students from <b>{{secondGroup}}</b> do not exceed <b>{{firstGroup}}</b> by rating",
+    "H1": "Students from <b>{{secondGroup}}</b> exceed <b>{{firstGroup}}</b> by rating",
+    "title": "Mann-Whitney U Test"
+  },
+  "rozenbaum": {
+    "code_1": "Selected more or less than 2 groups",
+    "code_2": "There is a group with less than 11 students",
+    "code_3": "The students count in both groups is less than 50 and the difference between them is more than 10",
+    "code_4": "The students count in both groups is less than 100 and the difference between them is more than 20",
+    "code_5": "The students count in both groups is more than 100 and the difference between them is more than 2 times",
+    "H0": "Students from <b>{{firstGroup}}</b> do not exceed <b>{{secondGroup}}</b> by rating",
+    "H1": "Students from <b>{{firstGroup}}</b> exceed <b>{{secondGroup}}</b> by rating",
+    "title": "Rozenbaum Q Test"
   }
 }

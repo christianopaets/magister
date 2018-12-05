@@ -2,39 +2,51 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <h5 class="white-text">{{ "footer.title" | translate }}</h5>
+        <p class="grey-text text-lighten-4">{{ "footer.description" | translate }}</p>
       </div>
       <div class="col l4 offset-l2 s12">
         <div class="page-footer__media right">
           <h5 class="white-text page-footer__media-text">{{ 'footer.media_title' | translate }}</h5>
           <ul class="page-footer__media-list">
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.mail">
               <img src="assets/icons/gmail.svg"
                    alt="gmail"
                    class="page-footer__media-icon">
             </a></li>
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
-              <img src="assets/icons/github-logo.svg"
-                   alt="github"
-                   class="page-footer__media-icon">
-            </a></li>
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
-              <img src="assets/icons/linkedin.svg"
-                   alt="linkedin"
-                   class="page-footer__media-icon">
-            </a></li>
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
-              <img src="assets/icons/facebook.svg"
-                   alt="facebook"
-                   class="page-footer__media-icon">
-            </a></li>
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.telegram">
               <img src="assets/icons/telegram.svg"
                    alt="telegram"
                    class="page-footer__media-icon">
             </a></li>
-            <li><a class="grey-text text-lighten-3 page-footer__media-link" href="#!">
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.github">
+              <img src="assets/icons/github-logo.svg"
+                   alt="github"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.linkedin">
+              <img src="assets/icons/linkedin.svg"
+                   alt="linkedin"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.facebook">
+              <img src="assets/icons/facebook.svg"
+                   alt="facebook"
+                   class="page-footer__media-icon">
+            </a></li>
+            <li><a class="grey-text text-lighten-3 page-footer__media-link"
+                   target="_blank"
+                   [href]="config.pinterest">
               <img src="assets/icons/pinterest.svg"
                    alt="pinterest"
                    class="page-footer__media-icon">

@@ -98,6 +98,7 @@ export class KruskalWallisService implements MethodInterface {
   }
 
   public run(groups: Group[]): void {
+    this.fullGroup = [];
     this.groups = groups;
     this.createFullGroup();
     this.HEmp = this.calcHEmp();

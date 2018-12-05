@@ -12,7 +12,7 @@ export class StudentsService {
   constructor(private http: HttpClient) { }
 
   getGroups(): Observable<Group[]> {
-    return this.http.get<{groups: Group[]}>('assets/mocks/students.json')
+    return this.http.get<{groups: Group[]}>('assets/mocks/students.1.json')
       .pipe(map((res: {groups: Group[]}) => res.groups.map(group => {
         return {
           ...group,

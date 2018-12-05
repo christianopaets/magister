@@ -9,6 +9,19 @@ import {FooterService} from '@shared/layout/footer/footer.service';
 })
 export class FooterComponent {
 
+  private _config = {
+    mail: 'mailto:christianopaet@gmail.com',
+    github: 'https://github.com/kris120197',
+    linkedin: 'https://www.linkedin.com/in/christian-opaets-1b12b0160/',
+    facebook: 'https://www.facebook.com/opaet.christian',
+    telegram: 'https://t.me/christianopaets',
+    pinterest: 'https://www.pinterest.com/christianopaet'
+  };
+
+  get config() {
+    return this._config;
+  }
+
   currentLang: string;
 
   constructor(readonly footerService: FooterService) {

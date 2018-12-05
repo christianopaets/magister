@@ -1,0 +1,759 @@
+{
+  "groups": [
+    {
+      "name": "115",
+      "students": [
+        {
+          "id": 84646,
+          "mark": 57,
+          "name": "Katharine Moreno"
+        },
+        {
+          "id": 36472,
+          "mark": 72,
+          "name": "Etta Montgomery"
+        },
+        {
+          "id": 3302,
+          "mark": 78,
+          "name": "Hulda Carroll"
+        },
+        {
+          "id": 85967,
+          "mark": 100,
+          "name": "Owen Graham"
+        },
+        {
+          "id": 91838,
+          "mark": 55,
+          "name": "Jonathan McKinney"
+        },
+        {
+          "id": 50920,
+          "mark": 61,
+          "name": "Mayme Alvarez"
+        },
+        {
+          "id": 74599,
+          "mark": 55,
+          "name": "Philip Chapman"
+        },
+        {
+          "id": 66274,
+          "mark": 89,
+          "name": "Inez Roberson"
+        },
+        {
+          "id": 29142,
+          "mark": 96,
+          "name": "Isabel Harvey"
+        },
+        {
+          "id": 54878,
+          "mark": 66,
+          "name": "Ophelia Byrd"
+        },
+        {
+          "id": 9520,
+          "mark": 69,
+          "name": "Patrick Perry"
+        },
+        {
+          "id": 98244,
+          "mark": 53,
+          "name": "Nicholas Henry"
+        },
+        {
+          "id": 61964,
+          "mark": 95,
+          "name": "Victoria Barker"
+        },
+        {
+          "id": 589,
+          "mark": 53,
+          "name": "Eva Morris"
+        },
+        {
+          "id": 71267,
+          "mark": 73,
+          "name": "Minnie Keller"
+        },
+        {
+          "id": 64806,
+          "mark": 84,
+          "name": "Anthony Beck"
+        },
+        {
+          "id": 15211,
+          "mark": 95,
+          "name": "Millie Morales"
+        },
+        {
+          "id": 89293,
+          "mark": 82,
+          "name": "Landon Sparks"
+        }
+      ]
+    },
+    {
+      "name": "402",
+      "students": [
+        {
+          "id": 92644,
+          "mark": 83,
+          "name": "Jose Lambert"
+        },
+        {
+          "id": 5391,
+          "mark": 76,
+          "name": "Ronald Roy"
+        },
+        {
+          "id": 66541,
+          "mark": 57,
+          "name": "Mayme Bryan"
+        },
+        {
+          "id": 50369,
+          "mark": 80,
+          "name": "Sam Burton"
+        },
+        {
+          "id": 79259,
+          "mark": 56,
+          "name": "Amy Rodgers"
+        },
+        {
+          "id": 34182,
+          "mark": 81,
+          "name": "Laura Ramirez"
+        },
+        {
+          "id": 81505,
+          "mark": 53,
+          "name": "Charles Knight"
+        },
+        {
+          "id": 89464,
+          "mark": 94,
+          "name": "Nina Marsh"
+        },
+        {
+          "id": 74699,
+          "mark": 55,
+          "name": "Bettie Foster"
+        },
+        {
+          "id": 98524,
+          "mark": 84,
+          "name": "Alfred Webb"
+        }
+      ]
+    },
+    {
+      "name": "505",
+      "students": [
+        {
+          "id": 90124,
+          "mark": 72,
+          "name": "Charles Curry"
+        },
+        {
+          "id": 29861,
+          "mark": 100,
+          "name": "Antonio Ellis"
+        },
+        {
+          "id": 20195,
+          "mark": 55,
+          "name": "Walter Curry"
+        },
+        {
+          "id": 22794,
+          "mark": 61,
+          "name": "Jack Collins"
+        },
+        {
+          "id": 75775,
+          "mark": 66,
+          "name": "Verna Potter"
+        },
+        {
+          "id": 73450,
+          "mark": 58,
+          "name": "Frederick Sanchez"
+        },
+        {
+          "id": 77849,
+          "mark": 83,
+          "name": "Anne Jennings"
+        },
+        {
+          "id": 37572,
+          "mark": 83,
+          "name": "Blanche Marshall"
+        },
+        {
+          "id": 51990,
+          "mark": 70,
+          "name": "Edward Gray"
+        },
+        {
+          "id": 16515,
+          "mark": 94,
+          "name": "Calvin McGuire"
+        },
+        {
+          "id": 60781,
+          "mark": 56,
+          "name": "Delia Gomez"
+        },
+        {
+          "id": 6,
+          "mark": 67,
+          "name": "Shawn Townsend"
+        },
+        {
+          "id": 24251,
+          "mark": 79,
+          "name": "Dylan Neal"
+        }
+      ]
+    },
+    {
+      "name": "406",
+      "students": [
+        {
+          "id": 49908,
+          "mark": 69,
+          "name": "Oscar Hernandez"
+        },
+        {
+          "id": 94356,
+          "mark": 74,
+          "name": "Luella Dawson"
+        },
+        {
+          "id": 21317,
+          "mark": 83,
+          "name": "Nina Lane"
+        },
+        {
+          "id": 88610,
+          "mark": 77,
+          "name": "Juan Obrien"
+        },
+        {
+          "id": 75428,
+          "mark": 70,
+          "name": "Maggie Beck"
+        },
+        {
+          "id": 21697,
+          "mark": 54,
+          "name": "Ethel Cortez"
+        },
+        {
+          "id": 21937,
+          "mark": 75,
+          "name": "Grace Sandoval"
+        },
+        {
+          "id": 61331,
+          "mark": 67,
+          "name": "Katie Clarke"
+        },
+        {
+          "id": 97123,
+          "mark": 67,
+          "name": "Hannah Mills"
+        },
+        {
+          "id": 71410,
+          "mark": 61,
+          "name": "Hester Manning"
+        },
+        {
+          "id": 62625,
+          "mark": 70,
+          "name": "Alejandro Snyder"
+        },
+        {
+          "id": 8448,
+          "mark": 71,
+          "name": "Lois Greer"
+        },
+        {
+          "id": 63133,
+          "mark": 84,
+          "name": "Ray Gutierrez"
+        },
+        {
+          "id": 14527,
+          "mark": 51,
+          "name": "Louisa Vasquez"
+        },
+        {
+          "id": 55243,
+          "mark": 98,
+          "name": "Olive Gomez"
+        },
+        {
+          "id": 56952,
+          "mark": 80,
+          "name": "Addie Silva"
+        },
+        {
+          "id": 4312,
+          "mark": 68,
+          "name": "Jeffery Copeland"
+        },
+        {
+          "id": 19712,
+          "mark": 68,
+          "name": "Chris Graves"
+        },
+        {
+          "id": 28011,
+          "mark": 60,
+          "name": "Virginia Castro"
+        },
+        {
+          "id": 39335,
+          "mark": 58,
+          "name": "Willie Russell"
+        },
+        {
+          "id": 22076,
+          "mark": 99,
+          "name": "Edith Cooper"
+        },
+        {
+          "id": 76521,
+          "mark": 89,
+          "name": "Johnny Townsend"
+        },
+        {
+          "id": 61827,
+          "mark": 73,
+          "name": "Dale Underwood"
+        }
+      ]
+    },
+    {
+      "name": "303",
+      "students": [
+        {
+          "id": 3456,
+          "mark": 84,
+          "name": "Jesse Nunez"
+        },
+        {
+          "id": 43255,
+          "mark": 54,
+          "name": "May Reed"
+        },
+        {
+          "id": 21598,
+          "mark": 57,
+          "name": "Hattie Hoffman"
+        },
+        {
+          "id": 21862,
+          "mark": 63,
+          "name": "Gary Owens"
+        },
+        {
+          "id": 38425,
+          "mark": 93,
+          "name": "Maude Aguilar"
+        },
+        {
+          "id": 74381,
+          "mark": 67,
+          "name": "Craig Bryant"
+        },
+        {
+          "id": 41647,
+          "mark": 60,
+          "name": "Mollie Gordon"
+        },
+        {
+          "id": 68650,
+          "mark": 62,
+          "name": "Ina Ballard"
+        },
+        {
+          "id": 34403,
+          "mark": 66,
+          "name": "Randall Knight"
+        },
+        {
+          "id": 11688,
+          "mark": 58,
+          "name": "Garrett Watson"
+        },
+        {
+          "id": 80173,
+          "mark": 77,
+          "name": "Victoria Malone"
+        },
+        {
+          "id": 89647,
+          "mark": 67,
+          "name": "Lizzie Phillips"
+        },
+        {
+          "id": 77227,
+          "mark": 55,
+          "name": "Ivan Williamson"
+        },
+        {
+          "id": 11555,
+          "mark": 64,
+          "name": "Francisco Carr"
+        }
+      ]
+    },
+    {
+      "name": "313",
+      "students": [
+        {
+          "id": 22444,
+          "mark": 95,
+          "name": "Troy Thompson"
+        },
+        {
+          "id": 88389,
+          "mark": 88,
+          "name": "Della Powers"
+        },
+        {
+          "id": 387,
+          "mark": 60,
+          "name": "Laura Bailey"
+        },
+        {
+          "id": 60630,
+          "mark": 66,
+          "name": "Minnie Estrada"
+        },
+        {
+          "id": 76034,
+          "mark": 81,
+          "name": "Irene Bowen"
+        },
+        {
+          "id": 72326,
+          "mark": 56,
+          "name": "Lucille Pierce"
+        },
+        {
+          "id": 93593,
+          "mark": 93,
+          "name": "Todd May"
+        },
+        {
+          "id": 44978,
+          "mark": 92,
+          "name": "John Scott"
+        },
+        {
+          "id": 64847,
+          "mark": 89,
+          "name": "Fanny Harris"
+        },
+        {
+          "id": 8208,
+          "mark": 73,
+          "name": "Tommy Paul"
+        },
+        {
+          "id": 99194,
+          "mark": 93,
+          "name": "Fannie Joseph"
+        },
+        {
+          "id": 93930,
+          "mark": 71,
+          "name": "Dollie Webb"
+        },
+        {
+          "id": 42147,
+          "mark": 62,
+          "name": "Delia McLaughlin"
+        },
+        {
+          "id": 48198,
+          "mark": 56,
+          "name": "Pauline James"
+        },
+        {
+          "id": 34999,
+          "mark": 67,
+          "name": "Elmer Alexander"
+        }
+      ]
+    },
+    {
+      "name": "503",
+      "students": [
+        {
+          "id": 62559,
+          "mark": 75,
+          "name": "Myrtle King"
+        },
+        {
+          "id": 42975,
+          "mark": 54,
+          "name": "Pearl Mullins"
+        },
+        {
+          "id": 46417,
+          "mark": 73,
+          "name": "Eddie Cummings"
+        },
+        {
+          "id": 33261,
+          "mark": 51,
+          "name": "Lucy Russell"
+        },
+        {
+          "id": 68033,
+          "mark": 92,
+          "name": "Julia Peterson"
+        },
+        {
+          "id": 65096,
+          "mark": 71,
+          "name": "Phillip Hart"
+        },
+        {
+          "id": 5303,
+          "mark": 76,
+          "name": "Theresa Mitchell"
+        },
+        {
+          "id": 84857,
+          "mark": 72,
+          "name": "Nathan Larson"
+        },
+        {
+          "id": 69304,
+          "mark": 66,
+          "name": "Russell Franklin"
+        },
+        {
+          "id": 78240,
+          "mark": 52,
+          "name": "Owen Neal"
+        }
+      ]
+    },
+    {
+      "name": "403",
+      "students": [
+        {
+          "id": 87427,
+          "mark": 73,
+          "name": "Franklin Stone"
+        },
+        {
+          "id": 53382,
+          "mark": 72,
+          "name": "Gordon Barnett"
+        },
+        {
+          "id": 25938,
+          "mark": 72,
+          "name": "Dora Greer"
+        },
+        {
+          "id": 35393,
+          "mark": 66,
+          "name": "Craig Reeves"
+        },
+        {
+          "id": 21959,
+          "mark": 56,
+          "name": "Viola Perez"
+        },
+        {
+          "id": 84535,
+          "mark": 92,
+          "name": "Phillip Paul"
+        },
+        {
+          "id": 6189,
+          "mark": 64,
+          "name": "Katie Bryant"
+        },
+        {
+          "id": 59167,
+          "mark": 61,
+          "name": "Olivia Berry"
+        },
+        {
+          "id": 70465,
+          "mark": 64,
+          "name": "Jane Moreno"
+        },
+        {
+          "id": 93844,
+          "mark": 84,
+          "name": "Lilly Salazar"
+        },
+        {
+          "id": 45040,
+          "mark": 70,
+          "name": "Peter Cobb"
+        },
+        {
+          "id": 72315,
+          "mark": 68,
+          "name": "Alvin Collins"
+        }
+      ]
+    },
+    {
+      "name": "314",
+      "students": [
+        {
+          "id": 94523,
+          "mark": 65,
+          "name": "Flora Gibson"
+        },
+        {
+          "id": 58997,
+          "mark": 59,
+          "name": "Sylvia Montgomery"
+        },
+        {
+          "id": 15001,
+          "mark": 83,
+          "name": "Sylvia Washington"
+        },
+        {
+          "id": 87161,
+          "mark": 71,
+          "name": "Marguerite Peterson"
+        },
+        {
+          "id": 65091,
+          "mark": 76,
+          "name": "Bernard McKinney"
+        },
+        {
+          "id": 10874,
+          "mark": 99,
+          "name": "Cora Erickson"
+        },
+        {
+          "id": 97900,
+          "mark": 69,
+          "name": "Leroy Gonzalez"
+        },
+        {
+          "id": 22510,
+          "mark": 96,
+          "name": "Fanny Todd"
+        },
+        {
+          "id": 18915,
+          "mark": 69,
+          "name": "Brandon Price"
+        },
+        {
+          "id": 42918,
+          "mark": 79,
+          "name": "Lilly Patton"
+        },
+        {
+          "id": 79223,
+          "mark": 78,
+          "name": "Ellen Mack"
+        }
+      ]
+    },
+    {
+      "name": "215",
+      "students": [
+        {
+          "id": 96841,
+          "mark": 70,
+          "name": "Matthew Graham"
+        },
+        {
+          "id": 96543,
+          "mark": 85,
+          "name": "Kathryn Alvarez"
+        },
+        {
+          "id": 65662,
+          "mark": 73,
+          "name": "Frank White"
+        },
+        {
+          "id": 45709,
+          "mark": 90,
+          "name": "Sadie Morrison"
+        },
+        {
+          "id": 83196,
+          "mark": 93,
+          "name": "Virgie Stewart"
+        },
+        {
+          "id": 50233,
+          "mark": 78,
+          "name": "Jerome Peters"
+        },
+        {
+          "id": 4725,
+          "mark": 93,
+          "name": "Lela Coleman"
+        },
+        {
+          "id": 65899,
+          "mark": 65,
+          "name": "Minnie McGuire"
+        },
+        {
+          "id": 21760,
+          "mark": 95,
+          "name": "Owen Garrett"
+        },
+        {
+          "id": 3405,
+          "mark": 70,
+          "name": "Lettie Daniel"
+        },
+        {
+          "id": 60248,
+          "mark": 91,
+          "name": "Stella Greer"
+        },
+        {
+          "id": 603,
+          "mark": 62,
+          "name": "David Yates"
+        },
+        {
+          "id": 76199,
+          "mark": 60,
+          "name": "Stanley Keller"
+        },
+        {
+          "id": 5964,
+          "mark": 97,
+          "name": "Luke Hudson"
+        },
+        {
+          "id": 652,
+          "mark": 56,
+          "name": "Carlos Patton"
+        }
+      ]
+    }
+  ]
+}
