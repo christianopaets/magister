@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Language} from '@models/Language';
 import {TranslateService} from '@ngx-translate/core';
+import {Title} from '@angular/platform-browser';
 
 @Injectable()
 export class FooterService {
@@ -22,7 +23,8 @@ export class FooterService {
     }
   ];
 
-  constructor(private readonly _translateService: TranslateService) {}
+  constructor(private readonly _translateService: TranslateService,
+              private readonly title: Title) {}
 
   getCurrentLanguage(): string {
     const language = localStorage.getItem(FooterService.LANG_CODE);
@@ -35,6 +37,7 @@ export class FooterService {
   setCurrentLanguage(lang: string): void {
     localStorage.setItem(FooterService.LANG_CODE, lang);
     this._translateService.use(lang);
+    this._translateService.get('header.logo_text').subscribe(value => this.title.setTitle(value));
   }
 
   initLanguage(): void {
