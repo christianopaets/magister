@@ -13,13 +13,13 @@
         </tr>
         <tr>
           <th>{{ "common.student" | translate }}</th>
-          <th>{{ "common.mark" | translate }}</th>
+          <th class="center-align">{{ "common.mark" | translate }}</th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let student of group.students">
           <td>{{ student.name }}</td>
-          <td>{{ student.mark }}</td>
+          <td class="center-align">{{ student.mark }}</td>
         </tr>
         </tbody>
       </table>
