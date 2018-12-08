@@ -29,7 +29,7 @@ export class FooterService {
     if (language) {
       return language;
     }
-    return 'en';
+    return 'ua';
   }
 
   setCurrentLanguage(lang: string): void {

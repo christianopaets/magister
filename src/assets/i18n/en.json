@@ -35,8 +35,8 @@
     "code_1": "Selected more or less than 2 groups",
     "code_2": "Group with less than 3 students",
     "code_3": "Group with more than 40 students",
-    "H0": "Students from <b>{{secondGroup}}</b> do not exceed <b>{{firstGroup}}</b> by rating",
-    "H1": "Students from <b>{{secondGroup}}</b> exceed <b>{{firstGroup}}</b> by rating",
+    "H0": "The level of student's performance in group <b>№{{secondGroup}}</b> is not higher than level of student's performance in group <b>№{{firstGroup}}</b>",
+    "H1": "The level of student's performance in group <b>№{{secondGroup}}</b> is higher than level of student's performance in group <b>№{{firstGroup}}</b>",
     "title": "Mann-Whitney U Test"
   },
   "rozenbaum": {
@@ -45,8 +45,8 @@
     "code_3": "The students count in both groups is less than 50 and the difference between them is more than 10",
     "code_4": "The students count in both groups is less than 100 and the difference between them is more than 20",
     "code_5": "The students count in both groups is more than 100 and the difference between them is more than 2 times",
-    "H0": "Students from <b>{{firstGroup}}</b> do not exceed <b>{{secondGroup}}</b> by rating",
-    "H1": "Students from <b>{{firstGroup}}</b> exceed <b>{{secondGroup}}</b> by rating",
+    "H0": "The level of student's performance in group <b>№{{firstGroup}}</b> is not higher than level of student's performance in group <b>№{{secondGroup}}</b>",
+    "H1": "The level of student's performance in group <b>№{{firstGroup}}</b> is higher than level of student's performance in group <b>№{{secondGroup}}</b>",
     "title": "Rozenbaum Q Test"
   }
 }
