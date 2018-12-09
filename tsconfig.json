@@ -18,8 +18,13 @@
     "module": "es2015",
     "baseUrl": "./src",
     "paths": {
+      "typeorm": ["../../server/node_modules/typeorm/typeorm-model-shim.js"],
       "@shared/*": ["app/shared/*"],
-      "@models/*": ["app/models/*"]
-    }
+      "@models/*": ["app/models/*"],
+      "@entity/*": ["app/entity/*"]
+    },
+    "types": [
+      "node"
+    ]
   }
 }
