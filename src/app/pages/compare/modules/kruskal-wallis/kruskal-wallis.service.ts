@@ -28,6 +28,13 @@ export class KruskalWallisService implements MethodInterface {
     return this.fullGroup.filter(group => group.group === index);
   }
 
+  getGroupRangSum(index: number): number {
+    const students = this.getGroupByIndex(index);
+    return students.reduce((previousValue, currentValue) => {
+      return previousValue + currentValue.rang;
+    }, 0);
+  }
+
   setWinStrategy(): void {
     const tendention = this.groups.length - 1;
     const H_005 = kwValues[tendention][0];
@@ -63,7 +70,7 @@ export class KruskalWallisService implements MethodInterface {
   }
 
   calcHEmp(): number {
-    return ( (12 / this.groups.length * (this.groups.length + 1)) * this.rangSum() ) - ( 3 * (this.groups.length + 1) );
+    return ( (12 / (this.fullGroup.length * (this.fullGroup.length + 1))) * this.rangSum() ) - ( 3 * (this.fullGroup.length + 1) );
   }
 
   public rangSum(): number {
@@ -75,7 +82,7 @@ export class KruskalWallisService implements MethodInterface {
 
   public rangPerGroup(index: number): number {
     return this.fullGroup
-      .filter(value => value.index === index)
+      .filter(value => value.group === index)
       .reduce((prevValue: number, value) => {
         return prevValue + value.rang;
       }, 0);

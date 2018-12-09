@@ -24,6 +24,11 @@
           <td class="center-align">{{ item.student.mark }}</td>
           <td class="center-align">{{ item.rang }}</td>
         </tr>
+        <tr>
+          <th class="left-align">{{ "common.total" | translate }}</th>
+          <th class="center-align"></th>
+          <th class="center-align">{{ kruskalWallisService.getGroupRangSum(i + 1) | number }}</th>
+        </tr>
         </tbody>
       </table>
     </div>

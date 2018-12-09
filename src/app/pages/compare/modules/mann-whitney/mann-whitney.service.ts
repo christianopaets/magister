@@ -22,6 +22,10 @@ export class MannWhitneyService implements MethodInterface {
 
   public error: IError;
 
+  get groups(): Group[] {
+    return [this.firstGroup, this.secondGroup];
+  }
+
   get winStrategyValue(): string {
     return `mann-whitney.${this.winStrategy}`;
   }
