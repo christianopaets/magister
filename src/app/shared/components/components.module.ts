@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {CardComponent} from '@shared/components/card/card.component';
 import {TranslateModule} from '@ngx-translate/core';
+import {ModalComponent} from '@shared/components/modal/modal.component';
 
 @NgModule({
   imports: [
@@ -9,10 +10,12 @@ import {TranslateModule} from '@ngx-translate/core';
     TranslateModule
   ],
   declarations: [
-    CardComponent
+    CardComponent,
+    ModalComponent
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    ModalComponent
   ]
 })
 export class ComponentsModule {}
