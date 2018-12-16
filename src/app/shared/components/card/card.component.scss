@@ -2,9 +2,20 @@ $blockquote-margin-bottom: 0;
 
 .mag-card {
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__header-title {
-  margin-top: 0;
-}
+    margin-top: 0;
+    width: 100%;
+  }
+
+  &__help-icon {
+    cursor: pointer;
+  }
 
   &__blockquote {
     border-color: #e91e63;

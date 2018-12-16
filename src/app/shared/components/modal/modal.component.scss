@@ -1,0 +1,11 @@
+.modal {
+
+  &__list {
+    padding: 0 0 0 16px;
+  }
+
+  &__list-item {
+    list-style-type: decimal;
+    padding: 0 0 8px 0;
+  }
+}

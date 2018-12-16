@@ -6,6 +6,7 @@ import {MethodInterface} from '@shared/default/MethodInterface';
 import {kwValues} from './kruskal-wallis';
 import {WinStrategy} from '@shared/default/win-strategy.enum';
 import {IKruskalWallis} from '@models/KruskalWallis';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Injectable()
 export class KruskalWallisService implements MethodInterface {
@@ -19,6 +20,22 @@ export class KruskalWallisService implements MethodInterface {
   public HEmp: number;
 
   public winStrategy: string;
+
+  private readonly _algorithm: IAlgorithm = {
+    title: 'kruskal-wallis.title',
+    steps: [
+      'kruskal-wallis.steps.s1',
+      'kruskal-wallis.steps.s2',
+      'kruskal-wallis.steps.s3',
+      'kruskal-wallis.steps.s4',
+      'kruskal-wallis.steps.s5',
+      'kruskal-wallis.steps.s6'
+    ]
+  };
+
+  get algorithn(): IAlgorithm {
+    return this._algorithm;
+  }
 
   get winStrategyValue(): string {
     return `kruskal-wallis.${this.winStrategy}`;

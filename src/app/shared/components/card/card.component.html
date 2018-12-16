@@ -2,11 +2,9 @@
   <div class="mag-card__header">
     <h4 class="mag-card__header-title">
       {{ title | translate }}
+      <i class="material-icons black-text right mag-card__help-icon"
+         (click)="magModal.openModal()">help_outline</i>
     </h4>
-    <a class="btn-floating btn-small waves-effect waves-light red"
-       (click)="magModal.openModal()">
-      <i class="material-icons">help</i>
-    </a>
   </div>
   <div class="mag-card__error" [hidden]="error.code === 0">
     <blockquote class="mag-card__blockquote">
@@ -23,4 +21,5 @@
   </div>
 </div>
 
-<mag-modal #magModal></mag-modal>
+<mag-modal #magModal
+           [algorithm]="algorithm"></mag-modal>

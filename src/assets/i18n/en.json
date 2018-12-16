@@ -24,13 +24,32 @@
     "code_2": "Selected more than 6 groups",
     "H0": "The trend of <b>Mark</b> increasing when switching from group to group is random",
     "H1": "The trend of <b>Mark</b> increasing when switching from group to group is non-random",
-    "title": "Jonckheere S Test"
+    "title": "Jonckheere S Test",
+    "steps": {
+      "s1": "If the number of respondents in groups is not the same, it is necessary to equalize the groups, focusing on the volume of the smaller of the groups",
+      "s2": "Sort the value of the first sample ascending and add the resulting number of values to the far left column of the table, then do the same for the second sample and add the resulting number of values to the second left column, etc., until all the columns in the table are filled.",
+      "s3": "Starting from the leftmost column, count for each individual value the number of values in the right that exceeds it (S<sub>i</sub>). The amounts received are listed next to each individual value",
+      "s4": "Calculate the sum of the indicators by column",
+      "s5": "Calculate the total amount by adding all the amounts in the columns, marking as A",
+      "s6": "Calculate the maximum possible number of prevailing values (B) that would be obtained if all values were right above the values on the left",
+      "s7": "Determine the empirical value of S",
+      "s8": "Determine the critical value S for the given number of samples (c) and for the given number of respondents in each sample (n)",
+      "s9": "If the empirical value S is greater than or equal to the critical value, H<sub>0</sub> is rejected"
+    }
   },
   "kruskal-wallis": {
     "code_1": "Selected less than 3 groups",
     "H0": "There are only random differences between the groups <b>{{groups}}</b> in terms of ratings.",
     "H1": "There are non-random differences between the groups <b>{{groups}}</b> in terms of ratings.",
-    "title": "Kruskal-Wallis H Test"
+    "title": "Kruskal-Wallis H Test",
+    "steps": {
+      "s1": "Merge the sample into one list and sort it by increasing the value of the attribute",
+      "s2": "Scan all values by assigning a smaller rank to a smaller value",
+      "s3": "Divide the routed values into the set at the start of the sample count",
+      "s4": "Calculate the sum of ranks in each sample. Check whether this amount is the same as the estimated amount",
+      "s5": "Calculate the value of the criterion H<sub>emp</sub>",
+      "s6": "If H<sub>emp</sub> is equal to or greater than the critical value H<sub>cr</sub>, H<sub>0</sub> is rejected"
+    }
   },
   "mann-whitney": {
     "code_1": "Selected more or less than 2 groups",
@@ -38,7 +57,16 @@
     "code_3": "Group with more than 40 students",
     "H0": "The level of student's performance in group <b>№{{secondGroup}}</b> is not higher than level of student's performance in group <b>№{{firstGroup}}</b>",
     "H1": "The level of student's performance in group <b>№{{secondGroup}}</b> is higher than level of student's performance in group <b>№{{firstGroup}}</b>",
-    "title": "Mann-Whitney U Test"
+    "title": "Mann-Whitney U Test",
+    "steps": {
+      "s1": "Merge both samples into one list and sort it by increasing the value of the attribute",
+      "s2": "Scan all values by assigning a smaller rank to a smaller value. Total ranks will be n<sub>1</sub> + n<sub>2</sub>;",
+      "s3": "Divide the routed values to two given at the beginning of the sample count",
+      "s4": "Calculate the sum of ranks in each sample. Check whether this amount is the same as the estimated amount",
+      "s5": "Determine the highest ranked sum",
+      "s6": "Count the value U<sub>emp</sub>",
+      "s7": "If U<sub>emp</sub> > U<sub>cr</sub>, H<sub>0</sub> is accepted."
+    }
   },
   "rozenbaum": {
     "code_1": "Selected more or less than 2 groups",
@@ -48,6 +76,16 @@
     "code_5": "The students count in both groups is more than 100 and the difference between them is more than 2 times",
     "H0": "The level of student's performance in group <b>№{{firstGroup}}</b> is not higher than level of student's performance in group <b>№{{secondGroup}}</b>",
     "H1": "The level of student's performance in group <b>№{{firstGroup}}</b> is higher than level of student's performance in group <b>№{{secondGroup}}</b>",
-    "title": "Rozenbaum Q Test"
+    "title": "Rozenbaum Q Test",
+    "steps": {
+      "s1": "Arrange the values in each sample according to the growth of the sign. Consider that the first is a sample in which the value is higher and the second one is the one in which the value is lower",
+      "s2": "Determine maximum value in sample 2",
+      "s3": "Calculate the number of values in sample 1, which is higher than the maximum value in sample 2, this value is denoted as S<sub>1</sub>",
+      "s4": "Determine the minimum value in the sample 1",
+      "s5": "Calculate the number of values in sample 2, which are below the minimum value in sample 1, this value is denoted as S<sub>2</sub>",
+      "s6": "Calculate the empirical value of Q by the formula Q = S<sub>1</sub> + S<sub>2</sub>",
+      "s7": "In the table, determine the critical value of Q",
+      "s8": "If Q<sub>emp</sub> ≥ Q<sub>cr</sub>, H<sub>0</sub> is rejected"
+    }
   }
 }

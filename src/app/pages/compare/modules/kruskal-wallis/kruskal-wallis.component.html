@@ -1,6 +1,7 @@
 
 <mag-card [title]="'kruskal-wallis.title' | translate"
           [error]="kruskalWallisService.error"
+          [algorithm]="kruskalWallisService.algorithn"
           [win]="kruskalWallisService.winStrategyValue | translate: { groups: groupNames }">
   <div class="row">
     <div class="col s12 m6 l4 no-padding" *ngFor="let group of groups; let i = index">

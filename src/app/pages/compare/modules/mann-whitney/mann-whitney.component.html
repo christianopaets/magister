@@ -1,5 +1,6 @@
 <mag-card [title]="'mann-whitney.title' | translate"
           [error]="mannWhitneyService.error"
+          [algorithm]="mannWhitneyService.algorithn"
           [win]="mannWhitneyService.winStrategyValue | translate: mannWhitneyService.translateValue">
   <div class="row">
     <div class="col s12 m6 l6 no-padding" *ngFor="let group of mannWhitneyService.groups; let i = index">

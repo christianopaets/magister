@@ -1,8 +1,13 @@
 <div #modalWindow
      class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+    <h4>{{ algorithm?.title | translate }}</h4>
+    <ul class="modal__list">
+      <li *ngFor="let step of algorithm?.steps"
+          class="modal__list-item"
+          [innerHtml]="step | translate">
+      </li>
+    </ul>
   </div>
   <div class="modal-footer">
     <a class="modal-close waves-effect btn-flat">{{ "common.close" | translate }}</a>

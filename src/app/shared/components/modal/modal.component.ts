@@ -1,5 +1,6 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/core';
 import * as M from 'materialize-css';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Component({
   selector: 'mag-modal',
@@ -7,8 +8,12 @@ import * as M from 'materialize-css';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements AfterViewInit {
+
   @ViewChild('modalWindow')
   modal: ElementRef;
+
+  @Input()
+  algorithm: IAlgorithm;
 
   private _modal: M.Modal;
 

@@ -5,6 +5,7 @@ import {Student} from '@models/Student';
 import {Group} from '@models/Group';
 import {IError} from '@models/Error';
 import {WinStrategy} from '@shared/default/win-strategy.enum';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +17,24 @@ export class RozenbaumService implements MethodInterface {
   public QEMP: number;
 
   winStrategy: string;
+
+  private readonly _algorithm: IAlgorithm = {
+    title: 'rozenbaum.title',
+    steps: [
+      'rozenbaum.steps.s1',
+      'rozenbaum.steps.s2',
+      'rozenbaum.steps.s3',
+      'rozenbaum.steps.s4',
+      'rozenbaum.steps.s5',
+      'rozenbaum.steps.s6',
+      'rozenbaum.steps.s7',
+      'rozenbaum.steps.s8',
+    ]
+  };
+
+  get algorithn(): IAlgorithm {
+    return this._algorithm;
+  }
 
   get winStrategyValue(): string {
     return `rozenbaum.${this.winStrategy}`;

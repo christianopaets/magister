@@ -1,5 +1,6 @@
 <mag-card [title]="'rozenbaum.title' | translate"
           [error]="rozenbaumService.error"
+          [algorithm]="rozenbaumService.algorithn"
           [win]="rozenbaumService.winStrategyValue | translate: rozenbaumService.translateValue">
   <div class="row">
     <div class="col s12 m6 l6 no-padding" *ngFor="let group of rozenbaumService.groupsSorted">

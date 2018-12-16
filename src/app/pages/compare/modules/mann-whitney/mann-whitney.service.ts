@@ -7,6 +7,7 @@ import {IMannWhitney} from '@models/MannWhitney';
 import {IKruskalWallis} from '@models/KruskalWallis';
 import {p001, p001_1, p001_2, p005, p005_1, p005_2} from './mann-whitney';
 import {WinStrategy} from '@shared/default/win-strategy.enum';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,23 @@ export class MannWhitneyService implements MethodInterface {
   winStrategy: string;
 
   public error: IError;
+
+  private readonly _algorithm: IAlgorithm = {
+    title: 'mann-whitney.title',
+    steps: [
+      'mann-whitney.steps.s1',
+      'mann-whitney.steps.s2',
+      'mann-whitney.steps.s3',
+      'mann-whitney.steps.s4',
+      'mann-whitney.steps.s5',
+      'mann-whitney.steps.s6',
+      'mann-whitney.steps.s7'
+    ]
+  };
+
+  get algorithn(): IAlgorithm {
+    return this._algorithm;
+  }
 
   get groups(): Group[] {
     return [this.firstGroup, this.secondGroup];

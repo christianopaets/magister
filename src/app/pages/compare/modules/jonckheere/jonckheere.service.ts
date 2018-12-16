@@ -5,15 +5,37 @@ import {Jonckheere, JonckheereItem} from '@models/Jonkheere';
 import {MethodInterface} from '@shared/default/MethodInterface';
 import {s001, s005} from './jonkheere';
 import {WinStrategy} from '@shared/default/win-strategy.enum';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Injectable()
 export class JonckheereService implements MethodInterface {
 
   error: IError;
+
   groups: Jonckheere[];
+
   SEmp: number;
 
   winStrategy: string;
+
+  private readonly _algorithm: IAlgorithm = {
+    title: 'jonckheere.title',
+    steps: [
+      'jonckheere.steps.s1',
+      'jonckheere.steps.s2',
+      'jonckheere.steps.s3',
+      'jonckheere.steps.s4',
+      'jonckheere.steps.s5',
+      'jonckheere.steps.s6',
+      'jonckheere.steps.s7',
+      'jonckheere.steps.s8',
+      'jonckheere.steps.s9'
+    ]
+  };
+
+  get algorithn(): IAlgorithm {
+    return this._algorithm;
+  }
 
   get winStrategyValue(): string {
     return `jonckheere.${this.winStrategy}`;

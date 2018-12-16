@@ -1,5 +1,6 @@
 <mag-card [title]="'jonckheere.title' | translate"
           [error]="jonckheereService.error"
+          [algorithm]="jonckheereService.algorithn"
           [win]="jonckheereService.winStrategyValue | translate">
   <div class="row">
     <div class="col s12 m6 l4 no-padding" *ngFor="let group of jonckheereService.groups; let last = last">

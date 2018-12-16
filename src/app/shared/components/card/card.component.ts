@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {IError} from '@models/Error';
+import {IAlgorithm} from '@models/Algorithm';
 
 @Component({
   selector: 'mag-card',
@@ -16,4 +17,7 @@ export class CardComponent {
 
   @Input()
   win: string;
+
+  @Input()
+  algorithm: IAlgorithm;
 }
